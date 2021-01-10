@@ -1,21 +1,21 @@
 package spaceinvaders;
 
 public class Personaje {
-	//	Atributos
+	// Atributos
 	private int puntosVida;
 	private String nombre;
 	private boolean vivo;
 	private int dispRecibidos = 0;
-	
-	//	Métodos
+
+	// Métodos
 	public Personaje() {
-		this.puntosVida = 50 + (int) Math.round(Math.random() * 50);	// 50 puntos iniciales + random(50)
+		this.puntosVida = 50 + (int) Math.round(Math.random() * 50); // 50 puntos iniciales + random(50)
 		this.nombre = "Personaje Jugable";
 		this.vivo = true;
 	}
-	
+
 	public Personaje(String nombre) {
-		this.puntosVida = 50 + (int) Math.round(Math.random() * 50);	// 50 puntos iniciales + random(50)
+		this.puntosVida = 50 + (int) Math.round(Math.random() * 50); // 50 puntos iniciales + random(50)
 		this.nombre = nombre;
 		this.vivo = true;
 	}
@@ -61,8 +61,7 @@ public class Personaje {
 	public void setVivo(boolean vivo) {
 		this.vivo = vivo;
 	}
-	
-	
+
 	public int getDispRecibidos() {
 		return dispRecibidos;
 	}
@@ -75,15 +74,15 @@ public class Personaje {
 		int disparo = 5 + (int) Math.round(Math.random() * 20);
 		enemigo.setPuntosVida(enemigo.getPuntosVida() - disparo);
 		enemigo.dispRecibidos++;
-		enemigo.comprobarVida();		
+		enemigo.comprobarVida();
 	}
-	
+
 	/**
 	 * Comprueba si le queda vida al personaje
 	 */
 	public void comprobarVida() {
-		if(this.puntosVida <= 0)
+		if (this.puntosVida <= 0)
 			this.vivo = false;
 	}
-	
+
 }
