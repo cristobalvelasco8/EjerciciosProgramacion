@@ -17,10 +17,10 @@ public class Dibujo extends Canvas {
 		g.fillRect(10, 10, 30, 50);
 		
 		g.setColor(Color.GREEN);
-		g.fillOval(50, 10, 30, 50);
+		g.fillOval(50, 10, 50, 50);
 		
 		int[] x = {90,90,150};
-		int[] y = {30,110,70};
+		int[] y = {50,110,70};
 		g.setColor(Color.BLUE);
 		g.fillPolygon(x,y,3);
 		

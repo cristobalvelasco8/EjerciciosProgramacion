@@ -19,7 +19,6 @@ public class Principal {
 		baraja.ordenar();
 		baraja.mostrar();
 
-		Poker poker = new Poker(baraja);
 	}
 
 }
