@@ -1,66 +1,48 @@
 package hashmap;
 
 public class Articulo {
-		String nombre;
-		int codBarras, numEstante, unidadesStock;
-		
-		
-		public Articulo(String nombre, int codBarras, int numEstante, int unidadesStock) {
-			super();
-			this.nombre = nombre;
-			this.codBarras = codBarras;
-			this.numEstante = numEstante;
-			this.unidadesStock = unidadesStock;
-		}
 
+	private int NumEstante;
+	private String Nombre;
+	private int Stock;
 
-		public String getNombre() {
-			return nombre;
-		}
+	public int getStock() {
+		return Stock;
+	}
 
+	public void setStock(int stock) {
+		Stock = stock;
+	}
 
-		public void setNombre(String nombre) {
-			this.nombre = nombre;
-		}
+	public Articulo(String nombre, int numEstante,  int stock) {
+		super();
+		this.NumEstante = numEstante;
+		this.Nombre = nombre;
+		this.Stock = stock;
+	}
 
+	public int getNumEstante() {
+		return NumEstante;
+	}
 
-		public int getCodBarras() {
-			return codBarras;
-		}
+	public void setNumEstante(int numEstante) {
+		NumEstante = numEstante;
+	}
 
+	public String getNombre() {
+		return Nombre;
+	}
 
-		public void setCodBarras(int codBarras) {
-			this.codBarras = codBarras;
-		}
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
 
-
-		public int getNumEstante() {
-			return numEstante;
-		}
-
-
-		public void setNumEstante(int numEstante) {
-			this.numEstante = numEstante;
-		}
-
-		
-
-		public int getUnidadesStock() {
-			return unidadesStock;
-		}
-
-
-		public void setUnidadesStock(int unidadesStock) {
-			this.unidadesStock = unidadesStock;
-		}
-
-
-		@Override
-		public String toString() {
-			return "Articulo [nombre=" + nombre + ", codBarras=" + codBarras + ", numEstante=" + numEstante
-					+ ", unidadesStock=" + unidadesStock + "]";
-		}
+	@Override
+	public String toString() {
+		return "Articulo [NumEstante=" + NumEstante + ", Nombre=" + Nombre + ", Stock=" + Stock
+				+ "]";
 	}
 
 
 
+}
