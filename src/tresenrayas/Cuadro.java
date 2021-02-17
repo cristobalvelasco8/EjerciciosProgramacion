@@ -25,8 +25,8 @@ public class Cuadro {
 	public void paint(Graphics g) {
 		ancho = Tresenraya.getInstance().getWidth() / 3;
 		alto = Tresenraya.getInstance().getHeight() / 3;
-		esquinaSuperiorIzquierdaY = this.xEnTablero * ancho;
-		esquinaSuperiorIzquierdaX = this.yEnTablero * alto;
+		esquinaSuperiorIzquierdaX = this.xEnTablero * ancho;
+		esquinaSuperiorIzquierdaY = this.yEnTablero * alto;
 		
 		//Pinto el borde
 		g.setColor(Color.BLACK);
@@ -83,7 +83,7 @@ public class Cuadro {
 		System.out.println("Jugada");
         for ( int i = 0; i < Tresenraya.getInstance().getMatrizJugadas().length;i++) {
             for (int j = 0; j < Tresenraya.getInstance().getMatrizJugadas()[i].length;j++) {
-                System.err.println(Tresenraya.getInstance().getMatrizJugadas()[i][j] + "\t");
+                System.out.print(Tresenraya.getInstance().getMatrizJugadas()[i][j] + "\t");
             }
             System.out.println();
         }
